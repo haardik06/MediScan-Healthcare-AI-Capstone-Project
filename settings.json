@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "D:\\CV PROJECT HARDIK\\.venv\\Scripts\\python.exe",
+    "python.analysis.venvPath": "D:\\CV PROJECT HARDIK",
+    "python.analysis.venv": ".venv",
+    "python.analysis.extraPaths": [
+        "D:\\CV PROJECT HARDIK\\backend",
+        "D:\\CV PROJECT HARDIK\\.venv\\Lib\\site-packages"
+    ],
+    "css.lint.unknownAtRules": "ignore"
+}

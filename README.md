@@ -1,16 +1,54 @@
-# React + Vite
+# MediScan: AI-Powered Clinical Diagnostic Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MediScan is a premium Computer Vision platform designed to provide healthcare professionals with explainable AI insights for medical imagery. By combining Deep Learning classification with Grad-CAM visualization, MediScan highlights critical focal points in Chest X-rays and Skin Lesions, assisting in faster and more transparent diagnostics.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Multi-Modal AI Engine:** Support for both Pulmonary (Chest X-Ray) and Dermatological (Skin Lesion) analysis.
+- **Explainable AI (Grad-CAM):** Dynamic heatmaps that visualize exactly where the AI is looking, ensuring clinical transparency.
+- **Professional Clinical Reports:** Structured, printable reports containing patient data, AI findings, and diagnostic advisories.
+- **Premium UX Design:** A state-of-the-art Glassmorphism interface optimized for clinical environments.
+- **Privacy First:** Local processing of diagnostic data with secure protocol alignment.
 
-## React Compiler
+## 🛠️ Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Backend:** Flask (Python)
+- **AI/ML:** PyTorch, Torchvision (DenseNet-121, ResNet-50)
+- **Computer Vision:** OpenCV, NumPy, Pillow
+- **Frontend:** React.js, Vite, Tailwind CSS, Framer Motion
+- **Icons:** Lucide React
 
-## Expanding the ESLint configuration
+## 📦 Installation & Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Python 3.9+
+- Node.js 18+
+- pip (Python package manager)
+
+### Backend Setup
+1. Navigate to the `backend` directory.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Start the server:
+   ```bash
+   python main.py
+   ```
+
+### Frontend Setup
+1. Navigate to the `frontend` directory.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🧪 Testing
+Sample medical imagery is provided in the `/samples` directory for immediate testing of both X-ray and Skin modes.
+
+## ⚖️ Disclaimer
+*This project is a technical demonstration for educational purposes. It is not intended for real-world clinical use without formal regulatory approval.*
